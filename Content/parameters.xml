@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Parameter>
+  <Test>
+    <id>VOGEL smoketest</id>
+    <filename>python.exe</filename>
+    <workingdirectory>C:\Users\cdelange\workspace\mercurial\Smoketest</workingdirectory>
+    <arguments>C:\Users\cdelange\workspace\mercurial\Smoketest\smoke_test.py</arguments>
+    <Parsstring>-s 9</Parsstring>
+    <Parsstring>-t 0</Parsstring>
+    <Parsstring>-c 1</Parsstring>
+    <Parsstring>--config</Parsstring>
+    <Parsstring>Frigate_Vogel_230V</Parsstring>
+    <interceptio>false</interceptio>
+  </Test>
+  <Test>
+    <id>Vogel Sequencer Distortion and Eff. Burst</id>
+    <filename>python.exe</filename>
+    <workingdirectory>C:\Users\cdelange\workspace\mercurial\pcu_test\scripts</workingdirectory>
+    <arguments>C:\Users\cdelange\workspace\mercurial\pcu_test\scripts\sequencer.py</arguments>
+    <Parsstring>--pcu_model S230-60-LN-2</Parsstring>
+    <Parsstring>--notes "VOGEL TESTING"</Parsstring>
+    <Parsstring>-s 9</Parsstring>
+    <Parsstring>--split</Parsstring>
+    <Parsstring>--test_name DistAndEffBurst</Parsstring>
+    <Parsstring>SERIAL_NUMBER</Parsstring>
+    <interceptio>false</interceptio>
+  </Test>
+  <Test>
+    <id>Vogel Sequencer Distortion and Eff.</id>
+    <filename>python.exe</filename>
+    <workingdirectory>C:\Users\cdelange\workspace\mercurial\pcu_test\scripts</workingdirectory>
+    <arguments>C:\Users\cdelange\workspace\mercurial\pcu_test\scripts\sequencer.py</arguments>
+    <Parsstring>--pcu_model S230-60-LN-2</Parsstring>
+    <Parsstring>--notes "VOGEL TESTING"</Parsstring>
+    <Parsstring>-s 9</Parsstring>
+    <Parsstring>--split</Parsstring>
+    <Parsstring>--test_name DistAndEff</Parsstring>
+    <Parsstring>SERIAL_NUMBER</Parsstring>
+    <interceptio>false</interceptio>
+  </Test>
+  <Test>
+    <id>Vogel Sequencer Realpower map with burst</id>
+    <filename>python.exe</filename>
+    <workingdirectory>C:\Users\cdelange\workspace\mercurial\pcu_test\scripts</workingdirectory>
+    <arguments>C:\Users\cdelange\workspace\mercurial\pcu_test\scripts\sequencer.py</arguments>
+    <Parsstring>--pcu_model S230-60-LN-2</Parsstring>
+    <Parsstring>--notes "VOGEL TESTING"</Parsstring>
+    <Parsstring>-s 9</Parsstring>
+    <Parsstring>--split</Parsstring>
+    <Parsstring>--test_name RealPwrMapBurst</Parsstring>
+    <Parsstring>SERIAL_NUMBER</Parsstring>
+    <interceptio>false</interceptio>
+  </Test>
+  <Test>
+    <id>Vogel Sequencer Realpower map</id>
+    <filename>python.exe</filename>
+    <workingdirectory>C:\Users\cdelange\workspace\mercurial\pcu_test\scripts</workingdirectory>
+    <arguments>C:\Users\cdelange\workspace\mercurial\pcu_test\scripts\sequencer.py</arguments>
+    <Parsstring>--pcu_model S230-60-LN-2</Parsstring>
+    <Parsstring>--notes "VOGEL TESTING"</Parsstring>
+    <Parsstring>-s 9</Parsstring>
+    <Parsstring>--split</Parsstring>
+    <Parsstring>--test_name RealPwrMap</Parsstring>
+    <Parsstring>SERIAL_NUMBER</Parsstring>
+    <interceptio>false</interceptio>
+  </Test>
+  <Test>
+    <id>Vogel Sequencer LoL HiL</id>
+    <filename>python.exe</filename>
+    <workingdirectory>C:\Users\cdelange\workspace\mercurial\pcu_test\scripts</workingdirectory>
+    <arguments>C:\Users\cdelange\workspace\mercurial\pcu_test\scripts\sequencer.py</arguments>
+    <Parsstring>--pcu_model S230-60-LN-2</Parsstring>
+    <Parsstring>--notes "VOGEL TESTING"</Parsstring>
+    <Parsstring>-s 9</Parsstring>
+    <Parsstring>--split</Parsstring>
+    <Parsstring>--test_name LoL_HiL</Parsstring>
+    <Parsstring>SERIAL_NUMBER</Parsstring>
+    <interceptio>false</interceptio>
+  </Test>
+  <Test>
+    <id>Vogel Sequencer LoL208HiL240</id>
+    <filename>python.exe</filename>
+    <workingdirectory>C:\Users\cdelange\workspace\mercurial\pcu_test\scripts</workingdirectory>
+    <arguments>C:\Users\cdelange\workspace\mercurial\pcu_test\scripts\sequencer.py</arguments>
+    <Parsstring>--pcu_model S230-60-LN-2</Parsstring>
+    <Parsstring>--notes "VOGEL TESTING"</Parsstring>
+    <Parsstring>-s 9</Parsstring>
+    <Parsstring>--split</Parsstring>
+    <Parsstring>--test_name LoL208HiL240</Parsstring>
+    <Parsstring>SERIAL_NUMBER</Parsstring>
+    <interceptio>false</interceptio>
+  </Test>
+  <Test>
+    <id>Vogel Stresswave</id>
+    <filename>python.exe</filename>
+    <workingdirectory>C:\Users\cdelange\workspace\mercurial\pcu_test\scripts</workingdirectory>
+    <arguments>C:\Users\cdelange\workspace\mercurial\pcu_test\scripts\stress_wave_program.py</arguments>
+    <Parsstring>--pcu_model S230-60-LN-2</Parsstring>
+    <Parsstring>--notes "VOGEL TESTING"</Parsstring>
+    <Parsstring>-s 9</Parsstring>
+    <Parsstring>--split</Parsstring>
+    <Parsstring>SERIAL_NUMBER</Parsstring>
+    <interceptio>false</interceptio>
+  </Test>
+  <Test>
+    <id>Station check</id>
+    <filename>python.exe</filename>
+    <workingdirectory>C:\Users\cdelange\workspace\mercurial\pcu_test\testlib\enphase_station</workingdirectory>
+    <arguments>C:\Users\cdelange\workspace\mercurial\pcu_test\testlib\enphase_station\station.py</arguments>
+    <Parsstring></Parsstring>
+    <Parsstring></Parsstring>
+    <Parsstring></Parsstring>
+    <Parsstring></Parsstring>
+    <Parsstring></Parsstring>
+    <interceptio>true</interceptio>
+  </Test>
+  <Test>
+    <id>Diogenes Test time</id>
+    <filename>python.exe</filename>
+    <workingdirectory>C:\Users\cdelange\workspace\teststuff</workingdirectory>
+    <arguments>C:\Users\cdelange\workspace\teststuff\testtime.py</arguments>
+    <Parsstring></Parsstring>
+    <Parsstring></Parsstring>
+    <Parsstring></Parsstring>
+    <Parsstring></Parsstring>
+    <Parsstring></Parsstring>
+    <interceptio>true</interceptio>
+  </Test>
+  <Test>
+    <id>Corvus Test time weert wer wer wer wer wer wer werwt</id>
+    <filename>python.exe</filename>
+    <workingdirectory>C:\Users\cdelange\workspace\teststuff</workingdirectory>
+    <arguments>C:\Users\cdelange\workspace\teststuff\testtime.py</arguments>
+    <Parsstring></Parsstring>
+    <Parsstring></Parsstring>
+    <Parsstring></Parsstring>
+    <Parsstring></Parsstring>
+    <Parsstring></Parsstring>
+    <interceptio>true</interceptio>
+  </Test>
+</Parameter>
