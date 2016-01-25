@@ -1,22 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Threading;
 using System.Windows.Forms;
-
-using System.IO;
 using System.Text.RegularExpressions;
-
 using System.Diagnostics;
-using System.Runtime.InteropServices;
-using System.Xml.Serialization;
-
-using System.Net;
 
 namespace PyLauncher
 {
@@ -143,7 +131,7 @@ namespace PyLauncher
             
             int index = this.listBox1.IndexFromPoint(e.Location);
             
-            if (index != System.Windows.Forms.ListBox.NoMatches)//check if item is there
+            if (index != ListBox.NoMatches)//check if item is there
             {
                 string item = (string)(this.listBox1.Items[index]);//get cliked it fom listbox 1
                 listBox2.Items.Add(item);//add item to litbox 2
@@ -155,7 +143,7 @@ namespace PyLauncher
         {
             int index = this.listBox2.IndexFromPoint(e.Location);
           
-            if (index != System.Windows.Forms.ListBox.NoMatches)//check if item is there
+            if (index != ListBox.NoMatches)//check if item is there
             {
                 object item = this.listBox2.Items[index];//get clicked it fom listbox 1
 
@@ -170,9 +158,9 @@ namespace PyLauncher
         {
             int index = this.listBox2.IndexFromPoint(e.Location);
 
-            if (e.Button == System.Windows.Forms.MouseButtons.Left)
+            if (e.Button == MouseButtons.Left)
             {
-                if (index != System.Windows.Forms.ListBox.NoMatches)//check if item is there
+                if (index != ListBox.NoMatches)//check if item is there
                 {
                     object item = this.listBox2.Items[index];//get clicked it fom listbox 1
 
@@ -184,9 +172,9 @@ namespace PyLauncher
                 }
             }
 
-            if(e.Button == System.Windows.Forms.MouseButtons.Right)
+            if(e.Button == MouseButtons.Right)
             {
-                if (index != System.Windows.Forms.ListBox.NoMatches)//check if item is there
+                if (index != ListBox.NoMatches)//check if item is there
                 {
                     object item = this.listBox2.Items[index];//get cliked it fom listbox 1
 
